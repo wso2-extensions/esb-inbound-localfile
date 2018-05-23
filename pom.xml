@@ -22,7 +22,7 @@ Copyright (c) 2016, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.apache.synapse.inbound</groupId>
     <artifactId>org.apache.synapse.localfile.class</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1-SNAPSHOT</version>
     <name>Local File Inbound OneTime Polling Sample</name>
     <url>http://wso2.org</url>
     <dependencies>
@@ -54,6 +54,14 @@ Copyright (c) 2016, WSO2 Inc. (http://www.wso2.org) All Rights Reserved.
             </releases>
         </repository>
     </repositories>
+    <scm>
+        <connection>scm:git:https://github.com/wso2-extensions/esb-inbound-localfile.git
+        </connection>
+        <url>https://github.com/wso2-extensions/esb-connector-inbound.git</url>
+        <developerConnection>scm:git:https://github.com/wso2-extensions/esb-inbound-localfile
+        </developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <build>
         <plugins>
             <plugin>
