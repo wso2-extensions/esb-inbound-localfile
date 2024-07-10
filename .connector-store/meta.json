@@ -1,7 +1,7 @@
 {
-    "name": "Localfile",
+    "name": "Localfile (Inbound)",
     "owner": "WSO2",
-    "category": "Developer Tools",
+    "category": "Inbound Endpoint",
     "documentationUrl": "https://docs.wso2.com/display/ESBCONNECTORS/Local+File+Connector+and+Inbound",
     "description": "The WSO2 ESB local file custom inbound protocol is a multi-tenant capable alternative to file inbound protocol. Current file inbound support for ftp, sftp and local files, but local file inbound will only support for local files. The ESB file inbound protocol uses the VFS transport to processing files in a specified source directory. The local file inbound uses java NIO API to process files in a specific directory. After processing the files, it moves them to a specified location or deletes them.",
     "status": "Active",
