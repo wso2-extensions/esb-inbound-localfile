@@ -1,0 +1,61 @@
+{
+  "name": "localFileInbound",
+  "type": "inbound-connector",
+  "title": "Local File Inbound Connector",
+  "help": "Configure the local file inbound connector to read and process files from a specified directory.",
+  "elements": [
+    {
+      "type": "attribute",
+      "value": {
+        "name": "fileURI",
+        "displayName": "File URI",
+        "inputType": "string",
+        "required": "true",
+        "helpTip": "The URI of the directory to watch for new files."
+      }
+    },
+    {
+      "type": "attribute",
+      "value": {
+        "name": "contentType",
+        "displayName": "Content Type",
+        "inputType": "string",
+        "required": "false",
+        "helpTip": "The content type of the files to process (e.g., 'text/plain')."
+      }
+    },
+    {
+      "type": "attribute",
+      "value": {
+        "name": "actionAfterProcess",
+        "displayName": "Action After Processing",
+        "inputType": "combo",
+        "comboValues": ["MOVE", "DELETE", "NONE"],
+        "required": "true",
+        "helpTip": "Action to take on the file after processing: MOVE to move the file, DELETE to delete the file, or NONE to leave the file as is."
+      }
+    },
+    {
+      "type": "attribute",
+      "value": {
+        "name": "moveFileURI",
+        "displayName": "Move File URI",
+        "inputType": "string",
+        "required": "false",
+        "helpTip": "The URI to move files if the action after processing is set to MOVE."
+      }
+    },
+    {
+      "type": "attribute",
+      "value": {
+        "name": "processBeforeWatch",
+        "displayName": "Process Existing Files Before Watch",
+        "inputType": "combo",
+        "comboValues": ["YES", "NO"],
+        "defaultValue": "NO",
+        "required": "true",
+        "helpTip": "Whether to process existing files in the directory before starting to watch for new files."
+      }
+    }
+  ]
+}
